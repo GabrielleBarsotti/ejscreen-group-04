@@ -1,0 +1,20 @@
+---
+title: "Group 04 CA pollution burden"
+author: "Gabrielle Barsotti"
+date: "11/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+```{r message= FALSE}
+ces <- read_csv(here("data", "ces3demographics.csv")) %>%
+  janitor::clean_names()
+  
+```
+

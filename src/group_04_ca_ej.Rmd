@@ -22,8 +22,9 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
   labs(x = "Precent White", 
-       y = "CES Score") +
-  scale_fill_gradient(low = "darkolivegreen", high = "darkolivegreen1") +
+       y = "CES Score",
+       title = "California Environmental Screen Score by Community ") +
+  scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
 

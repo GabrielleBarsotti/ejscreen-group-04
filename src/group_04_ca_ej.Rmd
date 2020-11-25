@@ -1,6 +1,6 @@
 ---
 title: "Group 04 CA pollution burden"
-author: "Gabrielle Barsotti"
+author: "Gabrielle Barsotti & Caitlin Manley"
 date: "11/25/2020"
 output: html_document
 ---
@@ -17,4 +17,11 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
   janitor::clean_names()
   
 ```
+
+```{r}
+ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
+  geom_point()
+
+```
+
 

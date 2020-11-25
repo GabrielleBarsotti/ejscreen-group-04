@@ -23,7 +23,7 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
   labs(x = "Precent White", 
        y = "CES Score",
-       title = "California Environmental Screen Score by Community ") +
+       title = "California Environmental Screen Score for White populations ") +
   scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
